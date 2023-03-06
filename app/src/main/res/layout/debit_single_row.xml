@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/debit_card"
+        android:layout_width="335dp"
+        android:layout_height="200dp"
+        android:background="?android:windowBackground"
+        app:cardCornerRadius="5dp"
+        android:layout_gravity="center">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/ivDebitPicture"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/pt_loading_dots"
+                android:padding="15dp"
+                app:civ_border_width="2dp"
+                app:civ_border_color="@color/colorPrimary"/>
+
+            <ImageView
+                android:id="@+id/ivStatus"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:translationY="20dp"
+                android:translationX="-20dp"
+                android:src="@drawable/debit_approved_circle"
+                android:tint="#F44336"
+                android:layout_alignParentRight="true"/>
+
+            <TextView
+                android:id="@+id/tvDebitContact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:layout_toRightOf="@id/ivDebitPicture"
+                android:fontFamily="@font/segoe_ui_light"
+                android:lines="1"
+                android:text="Debit Contact"
+                android:textSize="20sp"
+                android:translationY="5dp"/>
+
+            <View
+                android:id="@+id/vSeparator"
+                android:layout_width="230dp"
+                android:layout_height="1dp"
+                android:layout_centerHorizontal="true"
+                android:background="@color/colorPrimary"
+                android:layout_below="@id/tvDebitDeadline"
+                android:layout_marginTop="15dp"
+                android:translationY="20dp"/>
+
+            <TextView
+                android:id="@+id/tvDebitDeadline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/segoe_ui_regular"
+                android:layout_below="@id/tvDebitContact"
+                android:translationY="20dp"
+                android:layout_centerHorizontal="true"
+                android:lines="1"
+                android:text="Deadline"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tvDebitAddedDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/segoe_ui_light"
+                android:layout_below="@id/vSeparator"
+                android:translationX="20dp"
+                android:translationY="43dp"
+                android:text="Added on:"
+                android:textSize="15sp"
+                android:textStyle="italic"/>
+
+            <TextView
+                android:id="@+id/tvDebitSum"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:fontFamily="@font/bebas_neue_regular"
+                android:lines="1"
+                android:text="Sum"
+                android:textColor="#4CAF50"
+                android:textSize="30sp"
+                android:translationY="-10dp"/>
+
+            <TextView
+                android:id="@+id/tvDebitName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/ivDebitPicture"
+                android:fontFamily="@font/segoe_ui_light"
+                android:lines="1"
+                android:paddingRight="20dp"
+                android:text="Debit Name"
+                android:textSize="25sp"
+                android:textStyle="bold"/>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity"
+    android:background="@drawable/arc_shape">
+
+    <TextView
+        android:id="@+id/tvHelloUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/segoe_ui_light"
+        android:text=""
+        android:gravity="center"
+        android:lines="2"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30sp"
+        android:layout_marginTop="35dp"
+        />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_home"
+        android:layout_width="match_parent"
+        android:layout_height="440dp"
+        android:translationY="35dp"/>
+
+    <include android:id="@+id/nav" layout="@layout/layout_bottom_navigation" />
+
+</LinearLayout>

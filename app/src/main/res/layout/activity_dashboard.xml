@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".DashboardActivity"
+    android:background="@drawable/arc_shape">
+
+    <TextView
+        android:id="@+id/tvHelloUserDashboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/segoe_ui_light"
+        android:text=""
+        android:gravity="center"
+        android:lines="2"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30sp"
+        android:layout_marginTop="35dp"
+        />
+
+    <TextView
+        android:id="@+id/tvDashboardHistory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/history_content_header"
+        android:padding="20dp"
+        android:fontFamily="@font/segoe_ui_light"
+        android:layout_below="@id/tvHelloUserDashboard"
+        android:textSize="20sp"
+        android:textColor="#FFF"
+        android:gravity="center"
+        android:layout_marginTop="75dp" />
+
+    <View
+        android:id="@+id/vBelowDashboardHistory"
+        android:layout_width="180dp"
+        android:layout_height="1dp"
+        android:background="#FFFF"
+        android:layout_gravity="left"
+        android:layout_marginTop="-10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@id/tvDashboardHistory"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/tvEmptyPlaceholderDashboardHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No past debts and/or debits."
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:fontFamily="@font/segoe_ui_light"
+        android:textColor="#FFF"
+        android:textSize="20sp"
+        android:visibility="gone"/>
+
+    <ListView
+        android:id="@+id/lv_history"
+        android:layout_width="350dp"
+        android:layout_height="390dp"
+        android:layout_below="@id/vBelowDashboardHistory"
+        android:layout_centerHorizontal="true"
+        android:scrollbarSize="0dp"
+        android:dividerHeight="10dp"
+        android:scrollingCache="true"
+        android:divider="@color/colorPrimary"
+        android:paddingBottom="70dp"
+        android:clipToPadding="false">
+    </ListView>
+
+    <include android:id="@+id/dashboardNav" layout="@layout/layout_bottom_navigation" />
+
+
+</RelativeLayout>

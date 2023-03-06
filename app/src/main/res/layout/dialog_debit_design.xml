@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="330dp"
+    android:orientation="vertical"
+    android:background="#FFF">
+
+    <RelativeLayout
+        android:id="@+id/linearLayoutV1"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/colorPrimary"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:id="@+id/tvDialogDebitName"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/segoe_ui_light"
+            android:textColor="#FFF"
+            android:text="Debit Name"
+            android:gravity="center"
+            android:textSize="35sp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvDialogDebitStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/segoe_ui_light"
+        android:layout_below="@id/linearLayoutV1"
+        android:text="Status:"
+        android:textSize="20sp"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:id="@+id/tvDialogDebitContact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Debit Contact:"
+        android:layout_below="@id/tvDialogDebitStatus"
+        android:fontFamily="@font/segoe_ui_light"
+        android:textSize="20sp"
+        android:layout_margin="10dp"
+        android:translationY="-10dp"/>
+
+    <TextView
+        android:id="@+id/tvDialogDebitDaysUntilDeadline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Deadline: "
+        android:layout_below="@id/tvDialogDebitContact"
+        android:fontFamily="@font/segoe_ui_light"
+        android:textSize="20sp"
+        android:layout_margin="10dp"
+        android:translationY="-20dp"/>
+
+    <TextView
+        android:id="@+id/tvDialogDebitSum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="20.00₪"
+        android:layout_below="@id/tvDialogDebitDaysUntilDeadline"
+        android:layout_margin="10dp"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:fontFamily="@font/bebas_neue_regular"
+        android:textSize="35sp"
+        android:textColor="#4CAF50"
+        android:translationY="-20dp"/>
+
+    <Button
+        android:id="@+id/btnDialogDebitEdit"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:text="Edit"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textAllCaps="false"
+        android:background="@drawable/btn_login"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="#FFF"
+        android:fontFamily="@font/segoe_ui_light"
+        android:textSize="25sp"
+        android:drawableLeft="@drawable/pt_icon_edit"
+        android:drawableTint="#FFF"
+        android:paddingLeft="20dp"
+        android:paddingRight="40dp"
+        android:translationY="-10dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:focusableInTouchMode="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/colorPrimary"
+        android:layout_marginBottom="30dp">
+
+        <ImageView
+            android:id="@+id/ivCloseEditDebitDialog"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="right"
+            android:src="@drawable/pt_back_arrow"
+            android:tint="#FFF"
+            android:rotation="180"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:translationX="-15dp"/>
+
+        <TextView
+            android:id="@+id/tvEditDebitTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Debit Name"
+            android:fontFamily="@font/segoe_ui_regular"
+            android:textColor="#FFF"
+            android:textSize="30dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="-10dp"
+            android:layout_alignParentLeft="true"
+            android:translationX="20dp"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="300dp"
+        android:layout_height="1dp"
+        android:background="#FFF" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/tilEditDebitName"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:counterEnabled="true"
+        app:counterMaxLength="20"
+        app:errorEnabled="true"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/etEditDebitName"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="@string/add_debit_name"
+            android:textColorHint="@color/colorPrimary"
+            android:layout_gravity="center"
+            android:textColor="@color/colorPrimary"
+            android:fontFamily="@font/segoe_ui_light"
+            android:textSize="20sp"
+            android:drawableLeft="@drawable/pt_icon_search"
+            android:drawableTint="@color/colorPrimary"
+            android:drawablePadding="10dp"
+            android:backgroundTint="@color/colorPrimary"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/tilEditDebitDeadline"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:errorEnabled="true"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        android:layout_marginTop="-10dp">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/etEditDebitDeadline"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:inputType="date"
+            android:hint="@string/add_debit_date"
+            android:textColorHint="@color/colorPrimary"
+            android:layout_gravity="center"
+            android:textColor="@color/colorPrimary"
+            android:fontFamily="@font/segoe_ui_light"
+            android:textSize="20sp"
+            android:drawableLeft="@drawable/pt_icon_date"
+            android:drawableTint="@color/colorPrimary"
+            android:drawablePadding="10dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:focusable="false"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ivEditDebitPicture"
+            android:layout_width="200dp"
+            android:layout_height="130dp"
+            android:src="@android:drawable/sym_def_app_icon"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/colorPrimary"
+            android:layout_centerHorizontal="true"
+            android:alpha=".35"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/pt_icon_edit"
+            android:tint="#000"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+
+    </RelativeLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/tilEditDebitSum"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:counterEnabled="true"
+        app:counterMaxLength="6"
+        app:errorEnabled="true"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        android:layout_marginTop="20dp">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/etEditDebitSum"
+            android:layout_width="90dp"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:hint="@string/add_debit_sum"
+            android:textColorHint="@color/colorPrimary"
+            android:textColor="@color/colorPrimary"
+            android:fontFamily="@font/segoe_ui_light"
+            android:textSize="20sp"
+            android:drawableLeft="@drawable/pt_icon_money"
+            android:drawableTint="@color/colorPrimary"
+            android:drawablePadding="10dp"
+            android:backgroundTint="@color/colorPrimary"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnEditDebit"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:text="@string/edit_debit_finish_btn"
+            android:background="@drawable/btn_add_debit"
+            android:fontFamily="@font/segoe_ui_light"
+            android:textColor="#FFF"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+           android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            />
+
+    <View
+        android:layout_width="300dp"
+        android:layout_height="15dp"
+        android:background="#FFF" />
+
+</LinearLayout>

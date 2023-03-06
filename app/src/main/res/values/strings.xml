@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Payturn</string>
+    <string name="nav_home">Home</string>
+    <string name="nav_dashboard">Dashboard</string>
+    <string name="nav_profile">Profile</string>
+    <string name="login_header">Log In</string>
+    <string name="login_username">Username</string>
+    <string name="login_password">Password</string>
+    <string name="login_button">Log In</string>
+    <string name="login_sign_up">Don\'t have an account?</string>
+    <string name="register_header">Sign Up</string>
+    <string name="register_full_name">Full Name</string>
+    <string name="register_email">Email Address</string>
+    <string name="register_conf_password">Confirm Password</string>
+    <string name="register_button">Sign Up</string>
+    <string name="register_terms_agreement">* By signing up, you agree to our Terms of Use and to receive emails/updates and acknowledge that you read our Privacy Policy.</string>
+    <string name="home_menu_btn_1">Debts</string>
+    <string name="home_menu_btn_2">Debits</string>
+    <string name="home_content_header">Latest Debts</string>
+    <string name="add_debit_header">Add a Debit</string>
+    <string name="add_debit_name">Unique Name</string>
+    <string name="add_debit_sum">Sum</string>
+    <string name="add_debit_date">Deadline</string>
+    <string name="add_debit_image">Take a Picture</string>
+    <string name="add_debit_add_btn">Submit Debit</string>
+    <string name="add_debit_contact">Contact</string>
+    <string name="debits_header">Latest Debits</string>
+    <string name="profile_full_name">Full Name</string>
+    <string name="profile_email">E-mail</string>
+    <string name="profile_password">Password</string>
+    <string name="welcome_message">, Welcome to \nPayturn.</string>
+    <string name="edit_debit_finish_btn">Finish</string>
+    <string name="edit_debit_close_btn">Close</string>
+    <string name="history_content_header">History</string>
+</resources>

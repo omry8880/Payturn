@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".DebtsFragment"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/tvHomeTransactions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/home_content_header"
+        android:padding="20dp"
+        android:fontFamily="@font/segoe_ui_light"
+        android:textSize="20sp"
+        android:textColor="#FFF"
+        android:gravity="center"
+        android:layout_marginTop="40dp" />
+
+    <View
+        android:id="@+id/vBelowContentHeader"
+        android:layout_width="180dp"
+        android:layout_height="1dp"
+        android:background="#FFFF"
+        android:layout_gravity="left"
+        android:layout_marginTop="-10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@id/tvHomeTransactions"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/tvEmptyPlaceholderDebts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="It's a bit empty here..."
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:fontFamily="@font/segoe_ui_light"
+        android:textColor="#FFF"
+        android:textSize="20sp"
+        android:visibility="gone"/>
+
+    <ListView
+        android:id="@+id/lv_debts"
+        android:layout_width="350dp"
+        android:layout_height="390dp"
+        android:layout_below="@id/vBelowContentHeader"
+        android:layout_centerHorizontal="true"
+        android:scrollbarSize="0dp"
+        android:dividerHeight="10dp"
+        android:scrollingCache="true"
+        android:divider="@color/colorPrimary"
+        android:paddingBottom="8dp"
+        android:clipToPadding="false">
+    </ListView>
+
+</RelativeLayout>

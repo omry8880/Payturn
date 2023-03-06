@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <RelativeLayout
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:translationX="-20dp">
+    <TextView
+        android:id="@+id/tvAppHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/segoe_ui_bold"
+        android:text="ayturn"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30sp"
+        android:translationY="10dp"
+        android:translationX="-2dp"
+        />
+
+    <ImageView
+        android:id="@+id/ivAppLogo"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:translationY="10dp"
+        android:src="@drawable/pt_logo"
+        android:layout_toLeftOf="@id/tvAppHeader"/>
+    </RelativeLayout>
+
+</RelativeLayout>

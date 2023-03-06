@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "837829347125",
+    "firebase_url": "https://payturn-bd158.firebaseio.com",
+    "project_id": "payturn-bd158",
+    "storage_bucket": "payturn-bd158.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:837829347125:android:5abf4af352ab8ffcb16e7c",
+        "android_client_info": {
+          "package_name": "il.co.payturn.omry.payturn"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "837829347125-tmrquatfdhkstm1267n9o57ab9qs3063.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "il.co.payturn.omry.payturn",
+            "certificate_hash": "f023bdf7aaf053f08d3ef9012be253789d4c6fb2"
+          }
+        },
+        {
+          "client_id": "837829347125-pe5bsigt596pjinrtoicj2currmb0nim.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAh3PdkBlfA7Qut11GelgCXVAEPFp_JDTI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "837829347125-pe5bsigt596pjinrtoicj2currmb0nim.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
